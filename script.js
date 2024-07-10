@@ -1,5 +1,9 @@
+var n = 10;
+while (n > 7) {
+  n = parseInt(window.prompt("Enter a number for n X n less than 8"));
+}
 
-var n = parseInt(window.prompt("enter number of rows"))
+
 alert("Convince Sasuke To Come to hidden leaf Village for 3 times to get him back to hidden leaf village")
 var meet = 0
 var main = document.querySelector(".main")
@@ -29,11 +33,12 @@ function checkcondition(){
             alert("sasuke agreed to come to konoha ! Hurray")
             sasuke.src = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTN5cXp6Z2h0MmcyNHByaHNmdmF6dHhxeXJuMGo2d3BhdHZjaGU0dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y5efFpqW5knlu/giphy.webp"
             sasuke.style.top = "-5%"
-            sasuke.style.width = "40vmax"
-            sasuke.style.height = "40vmax"
+            sasuke.style.width = `${n*6}vw`
+            sasuke.style.height = `${n*6}vw`
             sasuke.style.top = "50%"
             sasuke.style.left = "50%"
             sasuke.style.transform = "translate(-50%,-50%)"
+            sasuke.style.borderRadius = 0
             setTimeout(() => {
                 if (confirm('Do you want to play the game again?')) {
                     location.reload();
